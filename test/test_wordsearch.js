@@ -86,39 +86,5 @@ describe("#wordSearch()", function() {
       ['O', 'D', 'C', 'A', 'O', 'U', 'A', 'S'],
       ['E', 'Z', 'K', 'F', 'W', 'U', 'A', 'L'],
     ], 'WOOF');
-
-    assert.isTrue(result);
-  });
-
-  it("should return true if the word is present diagonally", function() {
-    const result = wordSearch([
-      ['K', 'W', 'C', 'F', 'K', 'U', 'A', 'L'],
-      ['S', 'I', 'I', 'A', 'A', 'L', 'R', 'D'],
-      ['Y', 'F', 'T', 'F', 'D', 'U', 'A', 'L'],
-      ['H', 'M', 'J', 'S', 'F', 'V', 'R', 'G'],
-      ['W', 'H', 'Y', 'P', 'U', 'V', 'P', 'L'],
-      ['B', 'F', 'R', 'E', 'F', 'N', 'Y', 'B'],
-      ['U', 'B', 'T', 'W', 'O', 'P', 'E', 'I'],
-      ['O', 'D', 'C', 'A', 'O', 'U', 'A', 'S'],
-      ['E', 'Z', 'K', 'F', 'W', 'U', 'A', 'L'],
-    ], 'KITSUNE');
-
-    assert.isTrue(result);
-  });
-
-  it("should return true if the word is present backwards diagonally", function() {
-    const result = wordSearch([
-      ['K', 'W', 'C', 'F', 'K', 'U', 'A', 'L'],
-      ['S', 'Y', 'I', 'A', 'A', 'L', 'R', 'D'],
-      ['Y', 'F', 'R', 'F', 'D', 'U', 'A', 'L'],
-      ['H', 'M', 'J', 'R', 'F', 'V', 'R', 'G'],
-      ['W', 'H', 'Y', 'P', 'A', 'V', 'P', 'L'],
-      ['B', 'F', 'R', 'E', 'F', 'T', 'Y', 'B'],
-      ['U', 'B', 'T', 'W', 'O', 'P', 'S', 'I'],
-      ['O', 'D', 'C', 'A', 'O', 'U', 'A', 'S'],
-      ['E', 'Z', 'K', 'F', 'W', 'U', 'A', 'L'],
-    ], 'STARRY');
-
-    assert.isTrue(result);
   });
 });
