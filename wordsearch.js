@@ -1,3 +1,5 @@
+// Pair programmed by Lily Go @lilygo92 and Rain Zhu @raincouver
+
 const transpose = function(matrix) {
   // create an empty array
   const result = [];
